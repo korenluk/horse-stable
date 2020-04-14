@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BR8-p3-QVG">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="u5T-zC-ya9">
+            <objects>
+                <viewController id="BR8-p3-QVG" customClass="LoginViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SlO-yW-rV7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XG9-H8-Udd">
+                                <rect key="frame" x="157" y="144" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CGa-oh-MQP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j0B-eT-nld">
+                                <rect key="frame" x="157" y="208" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="wzu-ql-fhx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C1e-VE-SQS">
+                                <rect key="frame" x="184.5" y="292" width="45" height="30"/>
+                                <state key="normal" title="LOGIN"/>
+                                <connections>
+                                    <action selector="login:" destination="BR8-p3-QVG" eventType="touchUpInside" id="9Sy-gn-wYS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zy-Cd-2gf">
+                                <rect key="frame" x="172" y="782" width="70" height="30"/>
+                                <state key="normal" title="REGISTER"/>
+                                <connections>
+                                    <action selector="register:" destination="BR8-p3-QVG" eventType="touchUpInside" id="fuJ-LC-3yF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="j0B-eT-nld" firstAttribute="centerX" secondItem="SlO-yW-rV7" secondAttribute="centerX" id="1f4-ej-WRE"/>
+                            <constraint firstItem="C1e-VE-SQS" firstAttribute="centerX" secondItem="SlO-yW-rV7" secondAttribute="centerX" id="M6t-Pr-nEE"/>
+                            <constraint firstItem="XG9-H8-Udd" firstAttribute="top" secondItem="uFn-xM-WOp" secondAttribute="top" constant="100" id="SmR-9e-su5"/>
+                            <constraint firstItem="3zy-Cd-2gf" firstAttribute="bottom" secondItem="uFn-xM-WOp" secondAttribute="bottom" constant="-50" id="Waf-7v-Bk4"/>
+                            <constraint firstItem="C1e-VE-SQS" firstAttribute="top" secondItem="j0B-eT-nld" secondAttribute="bottom" constant="50" id="cLU-rB-fEf"/>
+                            <constraint firstItem="3zy-Cd-2gf" firstAttribute="centerX" secondItem="SlO-yW-rV7" secondAttribute="centerX" id="dKZ-bo-b9p"/>
+                            <constraint firstItem="XG9-H8-Udd" firstAttribute="centerX" secondItem="SlO-yW-rV7" secondAttribute="centerX" id="rdy-yK-lVd"/>
+                            <constraint firstItem="j0B-eT-nld" firstAttribute="top" secondItem="XG9-H8-Udd" secondAttribute="bottom" constant="30" id="uTx-KL-32A"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uFn-xM-WOp"/>
+                    </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="j0B-eT-nld" id="Ndb-Ro-0cI"/>
+                        <outlet property="usernameTextField" destination="XG9-H8-Udd" id="BVF-ib-kXF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ICk-fw-Od2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="145" y="160"/>
+        </scene>
+    </scenes>
+</document>

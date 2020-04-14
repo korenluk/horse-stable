@@ -1,0 +1,6 @@
+framework module Pods_defaults_HorseStable {
+  umbrella header "Pods-defaults-HorseStable-umbrella.h"
+
+  export *
+  module * { export * }
+}

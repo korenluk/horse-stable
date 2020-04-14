@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Sil-1a-Akd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Work Detail View Controller-->
+        <scene sceneID="aBY-v3-38S">
+            <objects>
+                <viewController id="Sil-1a-Akd" customClass="WorkDetailViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tGq-tH-V2e">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wYL-u1-pQf">
+                                <rect key="frame" x="157" y="124" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="nqd-EH-JS3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pWf-wa-2tL">
+                                <rect key="frame" x="0.0" y="188" width="414" height="216"/>
+                            </pickerView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="pWf-wa-2tL" firstAttribute="leading" secondItem="b59-W9-uRw" secondAttribute="leading" id="3Py-Ht-gVc"/>
+                            <constraint firstItem="pWf-wa-2tL" firstAttribute="trailing" secondItem="b59-W9-uRw" secondAttribute="trailing" id="BeZ-Nc-n21"/>
+                            <constraint firstItem="pWf-wa-2tL" firstAttribute="top" secondItem="wYL-u1-pQf" secondAttribute="bottom" constant="30" id="Lfc-XG-jnr"/>
+                            <constraint firstItem="wYL-u1-pQf" firstAttribute="top" secondItem="b59-W9-uRw" secondAttribute="top" constant="80" id="ash-Cy-LqV"/>
+                            <constraint firstItem="wYL-u1-pQf" firstAttribute="centerX" secondItem="tGq-tH-V2e" secondAttribute="centerX" id="xGl-i1-7Sy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="b59-W9-uRw"/>
+                    </view>
+                    <connections>
+                        <outlet property="horsePickerView" destination="pWf-wa-2tL" id="ufu-XP-8Uz"/>
+                        <outlet property="nameTextField" destination="wYL-u1-pQf" id="kKj-7v-5rQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bh2-Tf-xKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="55" y="111"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="98" id="T04-QN-hYN" customClass="FeedTypeCell" customModule="HorseStable" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="T04-QN-hYN" id="B7R-wE-jLY">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="98"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rbs-Oi-cf1">
+                        <rect key="frame" x="20" y="10" width="200" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="oyb-X2-Dwe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalCompressionResistancePriority="749" verticalCompressionResistancePriority="749" text="Label" textAlignment="right" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="90m-mW-hOM">
+                        <rect key="frame" x="244" y="10" width="150" height="18"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="VnL-df-Ll5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progressViewStyle="bar" translatesAutoresizingMaskIntoConstraints="NO" id="PZB-NE-aKS">
+                        <rect key="frame" x="20" y="67" width="374" height="11"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="10" id="acL-ln-uI7"/>
+                        </constraints>
+                    </progressView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Rbs-Oi-cf1" firstAttribute="top" secondItem="B7R-wE-jLY" secondAttribute="top" constant="10" id="2YN-3V-XJj"/>
+                    <constraint firstItem="PZB-NE-aKS" firstAttribute="centerX" secondItem="B7R-wE-jLY" secondAttribute="centerX" id="2to-to-5In"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="PZB-NE-aKS" secondAttribute="bottom" constant="10" id="3tl-ee-LkR"/>
+                    <constraint firstItem="PZB-NE-aKS" firstAttribute="leading" secondItem="B7R-wE-jLY" secondAttribute="leading" constant="20" id="Bbc-x8-LFA"/>
+                    <constraint firstAttribute="trailing" secondItem="90m-mW-hOM" secondAttribute="trailing" constant="20" id="UPS-JW-job"/>
+                    <constraint firstAttribute="trailing" secondItem="PZB-NE-aKS" secondAttribute="trailing" constant="20" id="nBn-0f-Nbj"/>
+                    <constraint firstItem="Rbs-Oi-cf1" firstAttribute="leading" secondItem="B7R-wE-jLY" secondAttribute="leading" constant="20" id="oe6-kk-9wY"/>
+                    <constraint firstItem="90m-mW-hOM" firstAttribute="top" secondItem="B7R-wE-jLY" secondAttribute="top" constant="10" id="u6L-pX-nuP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="capacityLabel" destination="90m-mW-hOM" id="wh0-WN-Oli"/>
+                <outlet property="nameLabel" destination="Rbs-Oi-cf1" id="coH-cc-Lbr"/>
+                <outlet property="progressView" destination="PZB-NE-aKS" id="l4r-v8-6jL"/>
+            </connections>
+            <point key="canvasLocation" x="-223.18840579710147" y="38.839285714285715"/>
+        </tableViewCell>
+    </objects>
+</document>

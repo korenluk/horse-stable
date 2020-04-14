@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XAz-2K-vAs">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Medical View Controller-->
+        <scene sceneID="dWj-Si-BAg">
+            <objects>
+                <viewController id="XAz-2K-vAs" customClass="AddMedicalViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="24p-Y2-yPA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="aXL-Rr-ee6">
+                                <rect key="frame" x="0.0" y="148" width="414" height="216"/>
+                            </datePicker>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="LWb-ZV-DNo">
+                                <rect key="frame" x="286" y="481" width="49" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </switch>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kkv-a1-0O5">
+                                <rect key="frame" x="157" y="94" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="za6-tO-FQl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Add Reminder?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aNM-h2-fxW">
+                                <rect key="frame" x="112" y="486" width="117" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="aXL-Rr-ee6" firstAttribute="trailing" secondItem="0dH-eD-M19" secondAttribute="trailing" id="9XN-OQ-XYa"/>
+                            <constraint firstItem="aXL-Rr-ee6" firstAttribute="leading" secondItem="0dH-eD-M19" secondAttribute="leading" id="J8w-GQ-Lcp"/>
+                            <constraint firstItem="Kkv-a1-0O5" firstAttribute="centerX" secondItem="24p-Y2-yPA" secondAttribute="centerX" id="V3h-Z3-WAH"/>
+                            <constraint firstItem="Kkv-a1-0O5" firstAttribute="top" secondItem="0dH-eD-M19" secondAttribute="top" constant="50" id="dUC-Is-Ulq"/>
+                            <constraint firstItem="aXL-Rr-ee6" firstAttribute="top" secondItem="Kkv-a1-0O5" secondAttribute="bottom" constant="20" id="xFK-Wa-S41"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="0dH-eD-M19"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="aXL-Rr-ee6" id="qay-tn-W9Z"/>
+                        <outlet property="nameTextField" destination="Kkv-a1-0O5" id="vjl-YM-ve1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pJH-eW-VdS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="88" y="70"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="njb-ne-OQd">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Detail View Controller-->
+        <scene sceneID="wXJ-ig-vUc">
+            <objects>
+                <viewController id="njb-ne-OQd" customClass="DetailViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="U0a-pL-yUk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="09Z-w0-5Gw">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iga-1w-qhS">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="272.5"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="INFO"/>
+                                        <connections>
+                                            <action selector="horseDetail:" destination="njb-ne-OQd" eventType="touchUpInside" id="Mw0-Vz-eW9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iRi-Qy-unS">
+                                        <rect key="frame" x="0.0" y="272.5" width="414" height="273"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="WORK"/>
+                                        <connections>
+                                            <action selector="workDetail:" destination="njb-ne-OQd" eventType="touchUpInside" id="ELR-VX-bXW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Afl-V6-obC">
+                                        <rect key="frame" x="0.0" y="545.5" width="414" height="272.5"/>
+                                        <color key="backgroundColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="MEDICAL"/>
+                                        <connections>
+                                            <action selector="medicDetail:" destination="njb-ne-OQd" eventType="touchUpInside" id="Xsm-b9-mKI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="iRi-Qy-unS" secondAttribute="trailing" id="0JH-yR-tLG"/>
+                                    <constraint firstItem="Iga-1w-qhS" firstAttribute="top" secondItem="09Z-w0-5Gw" secondAttribute="top" id="4ql-jf-ypn"/>
+                                    <constraint firstAttribute="trailing" secondItem="Afl-V6-obC" secondAttribute="trailing" id="L7U-6i-85S"/>
+                                    <constraint firstAttribute="trailing" secondItem="Iga-1w-qhS" secondAttribute="trailing" id="Qra-sL-bnN"/>
+                                    <constraint firstItem="Iga-1w-qhS" firstAttribute="leading" secondItem="09Z-w0-5Gw" secondAttribute="leading" id="Wul-47-wcS"/>
+                                    <constraint firstItem="Afl-V6-obC" firstAttribute="leading" secondItem="09Z-w0-5Gw" secondAttribute="leading" id="blP-kd-oGO"/>
+                                    <constraint firstItem="iRi-Qy-unS" firstAttribute="leading" secondItem="09Z-w0-5Gw" secondAttribute="leading" id="f6t-0d-KzB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="u8M-aX-yYV" firstAttribute="trailing" secondItem="09Z-w0-5Gw" secondAttribute="trailing" id="5Tf-9S-ZAk"/>
+                            <constraint firstItem="09Z-w0-5Gw" firstAttribute="leading" secondItem="u8M-aX-yYV" secondAttribute="leading" id="7Yz-53-rW1"/>
+                            <constraint firstItem="09Z-w0-5Gw" firstAttribute="top" secondItem="u8M-aX-yYV" secondAttribute="top" id="Pyq-gN-gk9"/>
+                            <constraint firstItem="u8M-aX-yYV" firstAttribute="bottom" secondItem="09Z-w0-5Gw" secondAttribute="bottom" id="zvR-Qx-L9v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="u8M-aX-yYV"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AMl-Gh-3cH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64" y="67"/>
+        </scene>
+    </scenes>
+</document>

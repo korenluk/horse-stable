@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9ns-gE-9S3">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings-->
+        <scene sceneID="NC3-j6-83F">
+            <objects>
+                <viewController id="9ns-gE-9S3" customClass="SettingsViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BD6-cC-c5x">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K15-0A-X7M">
+                                <rect key="frame" x="183" y="144" width="48" height="30"/>
+                                <state key="normal" title="Logout"/>
+                                <connections>
+                                    <action selector="logout:" destination="9ns-gE-9S3" eventType="touchUpInside" id="CjE-Ok-afs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kw-Dq-MXm">
+                                <rect key="frame" x="156.5" y="224" width="101" height="30"/>
+                                <state key="normal" title="Change Stable"/>
+                                <connections>
+                                    <action selector="changeStable:" destination="9ns-gE-9S3" eventType="touchUpInside" id="Xe0-J0-8uP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="K15-0A-X7M" firstAttribute="centerX" secondItem="BD6-cC-c5x" secondAttribute="centerX" id="KAi-VF-UZ6"/>
+                            <constraint firstItem="K15-0A-X7M" firstAttribute="top" secondItem="FdV-Cv-ven" secondAttribute="top" constant="100" id="OnL-Se-dBc"/>
+                            <constraint firstItem="3kw-Dq-MXm" firstAttribute="top" secondItem="K15-0A-X7M" secondAttribute="bottom" constant="50" id="idX-5v-AYA"/>
+                            <constraint firstItem="3kw-Dq-MXm" firstAttribute="centerX" secondItem="BD6-cC-c5x" secondAttribute="centerX" id="kMD-kx-fT6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FdV-Cv-ven"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="gear" catalog="system" id="kAQ-tQ-3rn"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PpQ-Jr-gc8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="158" y="157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gear" catalog="system" width="64" height="58"/>
+    </resources>
+</document>

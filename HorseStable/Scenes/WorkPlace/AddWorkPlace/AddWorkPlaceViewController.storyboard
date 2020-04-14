@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="f8c-8C-mzL">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Work Place View Controller-->
+        <scene sceneID="iQi-D2-RIb">
+            <objects>
+                <viewController id="f8c-8C-mzL" customClass="AddWorkPlaceViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fHX-ih-z2d">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FpV-TN-ZaQ">
+                                <rect key="frame" x="132" y="144" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Yie-C9-TC8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Capacity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UoI-u7-6SD">
+                                <rect key="frame" x="132" y="208" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="Zul-Yv-9po"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="FpV-TN-ZaQ" firstAttribute="centerX" secondItem="fHX-ih-z2d" secondAttribute="centerX" id="5w9-9a-19i"/>
+                            <constraint firstItem="FpV-TN-ZaQ" firstAttribute="top" secondItem="5wS-sf-dGc" secondAttribute="top" constant="100" id="FxV-Ki-Ps0"/>
+                            <constraint firstItem="UoI-u7-6SD" firstAttribute="centerX" secondItem="fHX-ih-z2d" secondAttribute="centerX" id="R7B-It-XMk"/>
+                            <constraint firstItem="UoI-u7-6SD" firstAttribute="top" secondItem="FpV-TN-ZaQ" secondAttribute="bottom" constant="30" id="u6V-A3-Mhe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5wS-sf-dGc"/>
+                    </view>
+                    <connections>
+                        <outlet property="capacityTextField" destination="UoI-u7-6SD" id="jMO-S5-dcF"/>
+                        <outlet property="nameTextField" destination="FpV-TN-ZaQ" id="uJf-RO-zJ7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HcY-HW-DHP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="120" y="60"/>
+        </scene>
+    </scenes>
+</document>

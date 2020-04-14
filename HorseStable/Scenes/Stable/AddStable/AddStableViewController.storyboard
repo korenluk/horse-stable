@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8BO-Mm-eQP">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Stable View Controller-->
+        <scene sceneID="f6j-ik-VnM">
+            <objects>
+                <viewController id="8BO-Mm-eQP" customClass="AddStableViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kuW-kC-KQq">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vGZ-lU-lcN">
+                                <rect key="frame" x="157" y="134.5" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="YWJ-pY-bDw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Capacity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXm-n4-xz9">
+                                <rect key="frame" x="157" y="198.5" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xOA-r7-vfZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2F5-4B-rDi">
+                                <rect key="frame" x="191" y="282.5" width="32" height="30"/>
+                                <state key="normal" title="ADD"/>
+                                <connections>
+                                    <action selector="addPressed:" destination="8BO-Mm-eQP" eventType="touchUpInside" id="KMO-Xi-wkE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD STABLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thX-ln-2p2">
+                                <rect key="frame" x="157" y="64" width="100" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="vGZ-lU-lcN" firstAttribute="top" secondItem="thX-ln-2p2" secondAttribute="bottom" constant="50" id="5BR-ZS-NmU"/>
+                            <constraint firstItem="ZXm-n4-xz9" firstAttribute="centerX" secondItem="kuW-kC-KQq" secondAttribute="centerX" id="G61-AA-UlQ"/>
+                            <constraint firstItem="2F5-4B-rDi" firstAttribute="top" secondItem="ZXm-n4-xz9" secondAttribute="bottom" constant="50" id="HK5-it-EJM"/>
+                            <constraint firstItem="vGZ-lU-lcN" firstAttribute="centerX" secondItem="kuW-kC-KQq" secondAttribute="centerX" id="S7o-Jj-kJ6"/>
+                            <constraint firstItem="thX-ln-2p2" firstAttribute="centerX" secondItem="kuW-kC-KQq" secondAttribute="centerX" id="WfU-2W-tk6"/>
+                            <constraint firstItem="thX-ln-2p2" firstAttribute="top" secondItem="Xel-U2-YeD" secondAttribute="top" constant="20" id="djE-dh-fde"/>
+                            <constraint firstItem="2F5-4B-rDi" firstAttribute="centerX" secondItem="kuW-kC-KQq" secondAttribute="centerX" id="nBv-Ws-Agb"/>
+                            <constraint firstItem="ZXm-n4-xz9" firstAttribute="top" secondItem="vGZ-lU-lcN" secondAttribute="bottom" constant="30" id="xU0-YO-rQj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Xel-U2-YeD"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="2F5-4B-rDi" id="3mP-Ok-kSH"/>
+                        <outlet property="capacityTextField" destination="ZXm-n4-xz9" id="7BQ-C6-Vqm"/>
+                        <outlet property="nameTextField" destination="vGZ-lU-lcN" id="3w8-xc-yFj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xd0-J0-Ede" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="103" y="147"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EtO-VO-j2F">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Work View Controller-->
+        <scene sceneID="i0O-U8-V4Z">
+            <objects>
+                <viewController id="EtO-VO-j2F" customClass="AddWorkViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t1H-mP-iuW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xqt-pj-qay">
+                                <rect key="frame" x="157" y="94" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Kd7-d5-2Ed"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jUq-A8-e4m">
+                                <rect key="frame" x="0.0" y="148" width="414" height="216"/>
+                            </pickerView>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="kDg-wW-ngm">
+                                <rect key="frame" x="0.0" y="364" width="414" height="216"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xqt-pj-qay" firstAttribute="top" secondItem="dTb-eD-ZRb" secondAttribute="top" constant="50" id="1ZE-Ks-0wh"/>
+                            <constraint firstItem="jUq-A8-e4m" firstAttribute="top" secondItem="xqt-pj-qay" secondAttribute="bottom" constant="20" id="8q5-ZL-3rX"/>
+                            <constraint firstItem="jUq-A8-e4m" firstAttribute="trailing" secondItem="dTb-eD-ZRb" secondAttribute="trailing" id="EIn-4y-H1h"/>
+                            <constraint firstItem="kDg-wW-ngm" firstAttribute="trailing" secondItem="dTb-eD-ZRb" secondAttribute="trailing" id="KaV-D7-pWU"/>
+                            <constraint firstItem="kDg-wW-ngm" firstAttribute="leading" secondItem="dTb-eD-ZRb" secondAttribute="leading" id="T6T-Ip-Myl"/>
+                            <constraint firstItem="kDg-wW-ngm" firstAttribute="top" secondItem="jUq-A8-e4m" secondAttribute="bottom" id="Ul3-iT-3BK"/>
+                            <constraint firstItem="xqt-pj-qay" firstAttribute="centerX" secondItem="t1H-mP-iuW" secondAttribute="centerX" id="f9L-sX-EAe"/>
+                            <constraint firstItem="jUq-A8-e4m" firstAttribute="leading" secondItem="dTb-eD-ZRb" secondAttribute="leading" id="rYM-SS-28L"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="dTb-eD-ZRb"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="kDg-wW-ngm" id="dd7-CN-QVy"/>
+                        <outlet property="horsePickerView" destination="jUq-A8-e4m" id="Dqe-nY-A9p"/>
+                        <outlet property="nameTextField" destination="xqt-pj-qay" id="fn1-1q-AMD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lla-1D-Mvn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141" y="137"/>
+        </scene>
+    </scenes>
+</document>

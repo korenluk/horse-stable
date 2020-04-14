@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="glR-3g-2lt">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Horse Detail View Controller-->
+        <scene sceneID="mlX-Cf-s5R">
+            <objects>
+                <viewController id="glR-3g-2lt" customClass="HorseDetailViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="czn-Yw-uPf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E75-3o-aew">
+                                <rect key="frame" x="157" y="94" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="NBG-hn-zNE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="R4Y-g1-r1I">
+                                <rect key="frame" x="0.0" y="148" width="414" height="216"/>
+                            </datePicker>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="E75-3o-aew" firstAttribute="top" secondItem="fjn-VR-p4g" secondAttribute="top" constant="50" id="3xI-ZL-5ZJ"/>
+                            <constraint firstItem="R4Y-g1-r1I" firstAttribute="top" secondItem="E75-3o-aew" secondAttribute="bottom" constant="20" id="F8c-QR-epZ"/>
+                            <constraint firstItem="E75-3o-aew" firstAttribute="centerX" secondItem="czn-Yw-uPf" secondAttribute="centerX" id="JUX-XV-OXZ"/>
+                            <constraint firstItem="R4Y-g1-r1I" firstAttribute="leading" secondItem="fjn-VR-p4g" secondAttribute="leading" id="O6x-zU-DaN"/>
+                            <constraint firstItem="R4Y-g1-r1I" firstAttribute="trailing" secondItem="fjn-VR-p4g" secondAttribute="trailing" id="fmm-s3-MXq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fjn-VR-p4g"/>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="R4Y-g1-r1I" id="Dxt-SK-jnT"/>
+                        <outlet property="nameTextField" destination="E75-3o-aew" id="kkZ-3M-SOD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXW-oO-OwU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="113"/>
+        </scene>
+    </scenes>
+</document>

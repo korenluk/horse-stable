@@ -1,0 +1,6 @@
+framework module Pods_defaults_HorseStableUITests {
+  umbrella header "Pods-defaults-HorseStableUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

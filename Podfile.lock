@@ -1,0 +1,32 @@
+PODS:
+  - Alamofire (4.8.2)
+  - FSCalendar (2.8.0)
+  - KeychainSwift (13.0.0)
+  - SwiftFormat/CLI (0.38.0)
+  - SwiftLint (0.37.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.8.2)
+  - FSCalendar
+  - KeychainSwift (~> 13.0)
+  - SwiftFormat/CLI (~> 0.38.0)
+  - SwiftLint (~> 0.31)
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - FSCalendar
+    - KeychainSwift
+    - SwiftFormat
+    - SwiftLint
+
+SPEC CHECKSUMS:
+  Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
+  FSCalendar: 3a5ed3636e2ba1b83ebebfcf0c2603105a6f5efe
+  KeychainSwift: 23d6c16cbc33f20fafa30c3d783241b4b87d998c
+  SwiftFormat: 0762bc591b9f6e8efa99402e714a03ede5151656
+  SwiftLint: c078a14d7d7ade75e5507795d185e3da41d844d2
+
+PODFILE CHECKSUM: 156a127e0f96f6c654414ccb0faf6b3e2fe2aef6
+
+COCOAPODS: 1.8.4

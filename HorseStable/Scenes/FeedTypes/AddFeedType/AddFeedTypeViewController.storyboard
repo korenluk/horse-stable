@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ICh-he-OZJ">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Feed Type View Controller-->
+        <scene sceneID="I9c-kX-g83">
+            <objects>
+                <viewController id="ICh-he-OZJ" customClass="AddFeedTypeViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5UN-sV-Oq3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9sX-an-SVW">
+                                <rect key="frame" x="157" y="165" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="nEE-a1-F08"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Capacity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="35u-BM-6Ob">
+                                <rect key="frame" x="157" y="219" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="sPU-sY-acQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADD FEED TYPE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9TX-Vx-igI">
+                                <rect key="frame" x="144" y="84" width="126" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Actual Capacity" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sxs-ZT-fPn">
+                                <rect key="frame" x="132" y="273" width="150" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="1b0-c9-S3s"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="sxs-ZT-fPn" firstAttribute="top" secondItem="35u-BM-6Ob" secondAttribute="bottom" constant="20" id="2js-C0-O38"/>
+                            <constraint firstItem="9sX-an-SVW" firstAttribute="top" secondItem="9TX-Vx-igI" secondAttribute="bottom" constant="60" id="3ud-iA-b6x"/>
+                            <constraint firstItem="35u-BM-6Ob" firstAttribute="centerX" secondItem="5UN-sV-Oq3" secondAttribute="centerX" id="4ZG-3a-WAu"/>
+                            <constraint firstItem="sxs-ZT-fPn" firstAttribute="centerX" secondItem="5UN-sV-Oq3" secondAttribute="centerX" id="Bug-KI-uHO"/>
+                            <constraint firstItem="9TX-Vx-igI" firstAttribute="top" secondItem="6EF-nC-0mn" secondAttribute="top" constant="40" id="Y3W-rL-fdL"/>
+                            <constraint firstItem="35u-BM-6Ob" firstAttribute="top" secondItem="9sX-an-SVW" secondAttribute="bottom" constant="20" id="Ydq-lK-B81"/>
+                            <constraint firstItem="9TX-Vx-igI" firstAttribute="centerX" secondItem="5UN-sV-Oq3" secondAttribute="centerX" id="e9f-lu-LbR"/>
+                            <constraint firstItem="9sX-an-SVW" firstAttribute="centerX" secondItem="5UN-sV-Oq3" secondAttribute="centerX" id="z0U-IX-oJL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6EF-nC-0mn"/>
+                    </view>
+                    <connections>
+                        <outlet property="actualCapacityTextField" destination="sxs-ZT-fPn" id="0cg-Qk-89o"/>
+                        <outlet property="capacityTextField" destination="35u-BM-6Ob" id="oxI-SX-eGx"/>
+                        <outlet property="nameTextField" destination="9sX-an-SVW" id="zPa-C1-0SQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zov-f2-tYF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="170" y="71"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YrQ-8a-XTS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add Horse View Controller-->
+        <scene sceneID="hG8-Ov-urM">
+            <objects>
+                <viewController id="YrQ-8a-XTS" customClass="AddHorseViewController" customModule="HorseStable" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CZq-W5-uU8">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eTR-qs-pdN">
+                                <rect key="frame" x="157" y="94" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="jAx-7c-bRU"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" translatesAutoresizingMaskIntoConstraints="NO" id="VWa-WU-Y7O">
+                                <rect key="frame" x="0.0" y="148" width="414" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="nFC-7a-ZlC"/>
+                                </constraints>
+                            </datePicker>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="f0z-3a-Uoc">
+                                <rect key="frame" x="157" y="438" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="CRZ-J4-EPn"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLO-Pt-lI0">
+                                <rect key="frame" x="0.0" y="318" width="414" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="KGF-Gt-wnm"/>
+                                </constraints>
+                            </pickerView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Breed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bnK-zQ-qlL">
+                                <rect key="frame" x="157" y="492" width="100" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="xEc-hh-gmc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="xLO-Pt-lI0" firstAttribute="trailing" secondItem="9nV-mb-PK5" secondAttribute="trailing" id="5aF-y6-0vU"/>
+                            <constraint firstItem="f0z-3a-Uoc" firstAttribute="centerX" secondItem="CZq-W5-uU8" secondAttribute="centerX" id="Ljk-r8-NwY"/>
+                            <constraint firstItem="bnK-zQ-qlL" firstAttribute="top" secondItem="f0z-3a-Uoc" secondAttribute="bottom" constant="20" id="ShO-lU-JlD"/>
+                            <constraint firstItem="bnK-zQ-qlL" firstAttribute="centerX" secondItem="CZq-W5-uU8" secondAttribute="centerX" id="ShP-SG-xFS"/>
+                            <constraint firstItem="VWa-WU-Y7O" firstAttribute="leading" secondItem="9nV-mb-PK5" secondAttribute="leading" id="bdU-Id-lwc"/>
+                            <constraint firstItem="eTR-qs-pdN" firstAttribute="top" secondItem="9nV-mb-PK5" secondAttribute="top" constant="50" id="dtE-O3-Gna"/>
+                            <constraint firstItem="VWa-WU-Y7O" firstAttribute="top" secondItem="eTR-qs-pdN" secondAttribute="bottom" constant="20" id="hNW-tk-7Z3"/>
+                            <constraint firstItem="eTR-qs-pdN" firstAttribute="centerX" secondItem="CZq-W5-uU8" secondAttribute="centerX" id="igY-45-lRl"/>
+                            <constraint firstItem="VWa-WU-Y7O" firstAttribute="trailing" secondItem="9nV-mb-PK5" secondAttribute="trailing" id="o2L-2z-xaM"/>
+                            <constraint firstItem="xLO-Pt-lI0" firstAttribute="leading" secondItem="9nV-mb-PK5" secondAttribute="leading" id="uIA-EW-3zp"/>
+                            <constraint firstItem="f0z-3a-Uoc" firstAttribute="top" secondItem="xLO-Pt-lI0" secondAttribute="bottom" constant="20" id="xlT-XD-JQQ"/>
+                            <constraint firstItem="xLO-Pt-lI0" firstAttribute="top" secondItem="VWa-WU-Y7O" secondAttribute="bottom" constant="20" id="ykf-QS-feH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9nV-mb-PK5"/>
+                    </view>
+                    <connections>
+                        <outlet property="birthDatePicker" destination="VWa-WU-Y7O" id="g1P-Go-iSp"/>
+                        <outlet property="breedTextField" destination="bnK-zQ-qlL" id="NOF-Fk-Xu5"/>
+                        <outlet property="colorTextField" destination="f0z-3a-Uoc" id="BkM-If-n29"/>
+                        <outlet property="genderPickerView" destination="xLO-Pt-lI0" id="Yvl-l8-sZc"/>
+                        <outlet property="nameTextField" destination="eTR-qs-pdN" id="CCe-hl-ING"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LDq-PM-gfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="192.75362318840581" y="112.5"/>
+        </scene>
+    </scenes>
+</document>
